@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  font-size: 14px;
+  text-align: start;
+  align-items: center;
+  /* padding-bottom: 5px; */
+}
+.link {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #4f4f4f;
+}
+.active {
+  position: relative;
+  color: #ff781d;
+  /* margin-bottom: 5px; */
+}
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  /* margin-top: 5px; */
+  background-color: #ff781d;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: #4f4f4f;
+}

@@ -23,6 +23,7 @@ const Header = () => {
           <div className={css.menu}>
             <FiBell className={css.iconBell} />
             <div className={css.userMenu}>
+              {/* <img src={User} alt="" className={css.iconUser} /> */}
               <svg
                 className={css.iconUser}
                 width="24"

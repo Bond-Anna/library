@@ -3,10 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import './App.css';
 
-const CategoriesView = lazy(() =>
-  import(
-    './views/Categories/CategoriesView' /* webpackChunkName: "categories-view" */
-  ),
+const HomeView = lazy(() =>
+  import('./views/Home/HomeView' /* webpackChunkName: "home-view" */),
 );
 const BooksView = lazy(() =>
   import('./views/Books/BooksView' /* webpackChunkName: "books-view" */),
@@ -33,12 +31,12 @@ const NotFoundView = lazy(() =>
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <div className="App">
+      <div className="container">
         <Suspense fallback={<h1>Загружаем...</h1>}>
           <Routes>
-            <Route exact path="/categories" element={<CategoriesView />} />
+            <Route exact path="/categories" element={<HomeView />} />
             <Route exact path="/books" element={<BooksView />} />
             <Route exact path="/audiobooks" element={<AudioView />} />
 
@@ -52,7 +50,7 @@ function App() {
           </Routes>
         </Suspense>
       </div>
-    </>
+    </div>
   );
 }
 

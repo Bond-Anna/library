@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { BiGridAlt } from 'react-icons/bi';
-import css from './navigation.module.css';
+import css from './menu.module.css';
 
 const Navigation = () => {
   return (

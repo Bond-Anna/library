@@ -1,7 +1,6 @@
 .categNav {
   text-align: start;
   width: 180px;
-  padding-top: 30px;
 }
 .categList {
   list-style: none;
@@ -31,6 +30,7 @@
   justify-content: space-between;
   margin: 0;
   margin-top: 22px;
+  text-decoration: none;
   color: #f1f1f1;
   stroke: #0e263e;
 }
